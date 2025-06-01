@@ -39,20 +39,11 @@
 			<Add library="sfml-graphics" />
 			<Add directory="SFML/lib" />
 		</Linker>
-		<Unit filename="Cola.cpp" />
-		<Unit filename="Cola.hpp" />
-		<Unit filename="Controller.cpp" />
-		<Unit filename="Controller.hpp" />
-		<Unit filename="Lista.cpp" />
-		<Unit filename="Lista.hpp" />
-		<Unit filename="NodoCola.hpp" />
-		<Unit filename="NodoLista.hpp" />
-		<Unit filename="NodoPila.hpp" />
-		<Unit filename="Pila.cpp" />
-		<Unit filename="Pila.hpp" />
-		<Unit filename="VistaPila.cpp" />
-		<Unit filename="VistaPila.hpp" />
 		<Unit filename="main.cpp" />
+		<Unit filename="stack.cpp" />
+		<Unit filename="stack.hpp" />
+		<Unit filename="visualizer.cpp" />
+		<Unit filename="visualizer.hpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
