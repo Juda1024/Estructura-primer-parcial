@@ -5,6 +5,7 @@
 		<Option title="Estructura primer parcial" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
+		<Option virtualFolders="include/;include/model/;include/vista/;include/controlador/;src/;src/modelo/;src/vista/;src/controlador/" />
 		<Build>
 			<Target title="Debug">
 				<Option output="bin/Debug/Estructura primer parcial" prefix_auto="1" extension_auto="1" />
@@ -12,6 +13,7 @@
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
+					<Add option="-std=c++17" />
 					<Add option="-g" />
 				</Compiler>
 			</Target>
@@ -22,6 +24,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add option="-std=c++17" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -39,19 +42,45 @@
 			<Add library="sfml-graphics" />
 			<Add directory="SFML/lib" />
 		</Linker>
-		<Unit filename="cola.cpp" />
-		<Unit filename="cola.hpp" />
-		<Unit filename="cola_visualizer.cpp" />
-		<Unit filename="cola_visualizer.hpp" />
-		<Unit filename="list.cpp" />
-		<Unit filename="list.hpp" />
-		<Unit filename="list_visualizer.cpp" />
-		<Unit filename="list_visualizer.hpp" />
-		<Unit filename="main.cpp" />
-		<Unit filename="stack.cpp" />
-		<Unit filename="stack.hpp" />
-		<Unit filename="visualizer.cpp" />
-		<Unit filename="visualizer.hpp" />
+		<Unit filename="cola.cpp">
+			<Option virtualFolder="src/modelo/" />
+		</Unit>
+		<Unit filename="cola.hpp">
+			<Option virtualFolder="include/model/" />
+		</Unit>
+		<Unit filename="cola_visualizer.cpp">
+			<Option virtualFolder="src/vista/" />
+		</Unit>
+		<Unit filename="cola_visualizer.hpp">
+			<Option virtualFolder="include/vista/" />
+		</Unit>
+		<Unit filename="list.cpp">
+			<Option virtualFolder="src/modelo/" />
+		</Unit>
+		<Unit filename="list.hpp">
+			<Option virtualFolder="include/model/" />
+		</Unit>
+		<Unit filename="list_visualizer.cpp">
+			<Option virtualFolder="src/vista/" />
+		</Unit>
+		<Unit filename="list_visualizer.hpp">
+			<Option virtualFolder="include/vista/" />
+		</Unit>
+		<Unit filename="main.cpp">
+			<Option virtualFolder="src/controlador/" />
+		</Unit>
+		<Unit filename="stack.cpp">
+			<Option virtualFolder="src/modelo/" />
+		</Unit>
+		<Unit filename="stack.hpp">
+			<Option virtualFolder="include/model/" />
+		</Unit>
+		<Unit filename="visualizer.cpp">
+			<Option virtualFolder="src/vista/" />
+		</Unit>
+		<Unit filename="visualizer.hpp">
+			<Option virtualFolder="include/vista/" />
+		</Unit>
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
