@@ -43,6 +43,10 @@
 		<Unit filename="cola.hpp" />
 		<Unit filename="cola_visualizer.cpp" />
 		<Unit filename="cola_visualizer.hpp" />
+		<Unit filename="list.cpp" />
+		<Unit filename="list.hpp" />
+		<Unit filename="list_visualizer.cpp" />
+		<Unit filename="list_visualizer.hpp" />
 		<Unit filename="main.cpp" />
 		<Unit filename="stack.cpp" />
 		<Unit filename="stack.hpp" />
