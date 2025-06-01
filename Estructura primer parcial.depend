@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1748741599 source:c:\users\judag\onedrive\desktop\estructura de datos\primer parcial\parcial 1 proyecto\estructura primer parcial\main.cpp
+1748744002 source:c:\users\judag\onedrive\desktop\estructura de datos\primer parcial\parcial 1 proyecto\estructura primer parcial\main.cpp
 	<iostream>
 	"stack.hpp"
 	"visualizer.hpp"
@@ -554,13 +554,17 @@
 	"Controller.hpp"
 	<iostream>
 
-1748736721 source:c:\users\judag\onedrive\desktop\estructura de datos\primer parcial\parcial 1 proyecto\estructura primer parcial\stack.cpp
+1748743426 source:c:\users\judag\onedrive\desktop\estructura de datos\primer parcial\parcial 1 proyecto\estructura primer parcial\stack.cpp
 	"stack.hpp"
 	<iostream>
 
-1748736334 c:\users\judag\onedrive\desktop\estructura de datos\primer parcial\parcial 1 proyecto\estructura primer parcial\stack.hpp
+1748743369 c:\users\judag\onedrive\desktop\estructura de datos\primer parcial\parcial 1 proyecto\estructura primer parcial\stack.hpp
 
-1748741242 c:\users\judag\onedrive\desktop\estructura de datos\primer parcial\parcial 1 proyecto\estructura primer parcial\visualizer.hpp
+1748742943 c:\users\judag\onedrive\desktop\estructura de datos\primer parcial\parcial 1 proyecto\estructura primer parcial\visualizer.hpp
 	<SFML/Graphics.hpp>
 	"stack.hpp"
+
+1748743502 source:c:\users\judag\onedrive\desktop\estructura de datos\primer parcial\parcial 1 proyecto\estructura primer parcial\visualizer.cpp
+	"visualizer.hpp"
+	<sstream>
 

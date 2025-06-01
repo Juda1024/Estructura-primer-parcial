@@ -16,3 +16,5 @@ struct Stack {
     void clear();
     void printRecursive(Node* node) const;
 };
+
+int stackLength(const Stack& stack);

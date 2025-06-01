@@ -38,6 +38,7 @@ int main() {
                         case 1:
                             cout << "Ingrese valor a apilar: ";
                             cin >> valor;
+                            visual.animatePush(pila, valor);
                             pila.push(valor);
                             cout << "Valor apilado.\n";
                             break;
@@ -45,12 +46,16 @@ int main() {
                             if (pila.isEmpty())
                                 cout << "La pila esta vacia.\n";
                             else
-                                cout << "Valor desapilado: " << pila.pop() << "\n";
+                                int valor = pila.peek();
+                                visual.animatePop(pila, valor);
+                                pila.pop();
+                                cout << "Valor desapilado: " << valor << "\n";
                             break;
                         case 3:
                             if (pila.isEmpty())
                                 cout << "La pila esta vacia.\n";
                             else
+                                visual.animateTop(pila);
                                 cout << "Valor en el tope: " << pila.peek() << "\n";
                             break;
                         case 4:

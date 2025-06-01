@@ -38,3 +38,13 @@ void Stack::printRecursive(Node* node) const {
     printRecursive(node->next);
     cout << "[" << node->value << "] ";
 }
+
+int stackLength(const Stack& stack) {
+    int count = 0;
+    Node* current = stack.top;
+    while (current) {
+        count++;
+        current = current->next;
+    }
+    return count;
+}
