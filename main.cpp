@@ -79,11 +79,12 @@ int main() {
                         case 2:
                             if (pila.isEmpty())
                                 cout << "La pila esta vacia.\n";
-                            else
+                            else{
                                 int valor = pila.peek();
                                 visual.animatePop(pila, valor);
                                 pila.pop();
                                 cout << "Valor desapilado: " << valor << "\n";
+                            }
                             break;
                         case 3:
                             if (pila.isEmpty())
@@ -123,11 +124,12 @@ int main() {
                         case 2:
                             if (cola.isEmpty())
                                 cout << "La cola esta vacia.\n";
-                            else
+                            else {
                                 int valor = cola.getFront();
                                 colaVisual.animateDequeue(cola, valor);
                                 cola.dequeue();
                                 cout << "Valor desencolado: " << valor << "\n";
+                            }
                             break;
                         case 3:
                             if (cola.isEmpty())

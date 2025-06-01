@@ -95,7 +95,7 @@ void Visualizer::animatePush(const Stack& stack, int value) {
         window.draw(animText);
 
         window.display();
-        sf::sleep(sf::milliseconds(20));
+        sf::sleep(sf::milliseconds(60));
     }
 }
 
@@ -148,7 +148,7 @@ void Visualizer::animatePop(const Stack& stack, int value) {
         window.draw(animText);
 
         window.display();
-        sf::sleep(sf::milliseconds(20));
+        sf::sleep(sf::milliseconds(60));
     }
 }
 
@@ -190,6 +190,6 @@ void Visualizer::animateTop(const Stack& stack) {
         }
 
         window.display();
-        sf::sleep(sf::milliseconds(40));
+        sf::sleep(sf::milliseconds(70));
     }
 }

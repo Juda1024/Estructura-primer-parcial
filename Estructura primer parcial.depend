@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1748750134 source:c:\users\judag\onedrive\desktop\estructura de datos\primer parcial\parcial 1 proyecto\estructura primer parcial\main.cpp
+1748818922 source:c:\users\judag\onedrive\desktop\estructura de datos\primer parcial\parcial 1 proyecto\estructura primer parcial\main.cpp
 	<iostream>
 	"stack.hpp"
 	"cola.hpp"
@@ -567,11 +567,11 @@
 	<SFML/Graphics.hpp>
 	"stack.hpp"
 
-1748745999 source:c:\users\judag\onedrive\desktop\estructura de datos\primer parcial\parcial 1 proyecto\estructura primer parcial\visualizer.cpp
+1748819108 source:c:\users\judag\onedrive\desktop\estructura de datos\primer parcial\parcial 1 proyecto\estructura primer parcial\visualizer.cpp
 	"visualizer.hpp"
 	<sstream>
 
-1748747030 source:c:\users\judag\onedrive\desktop\estructura de datos\primer parcial\parcial 1 proyecto\estructura primer parcial\cola_visualizer.cpp
+1748818433 source:c:\users\judag\onedrive\desktop\estructura de datos\primer parcial\parcial 1 proyecto\estructura primer parcial\cola_visualizer.cpp
 	"cola_visualizer.hpp"
 	<sstream>
 	<SFML/System/Sleep.hpp>
@@ -586,7 +586,12 @@
 
 1748747626 c:\users\judag\onedrive\desktop\estructura de datos\primer parcial\parcial 1 proyecto\estructura primer parcial\list.hpp
 
-1748749959 c:\users\judag\onedrive\desktop\estructura de datos\primer parcial\parcial 1 proyecto\estructura primer parcial\list_visualizer.hpp
+1748750618 c:\users\judag\onedrive\desktop\estructura de datos\primer parcial\parcial 1 proyecto\estructura primer parcial\list_visualizer.hpp
 	<SFML/Graphics.hpp>
 	"list.hpp"
+
+1748819108 source:c:\users\judag\onedrive\desktop\estructura de datos\primer parcial\parcial 1 proyecto\estructura primer parcial\list_visualizer.cpp
+	"list_visualizer.hpp"
+	<sstream>
+	<SFML/System/Sleep.hpp>
 

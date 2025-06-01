@@ -91,7 +91,7 @@ void ColaVisualizer::animateEnqueue(const Cola& cola, int value) {
         window.draw(animText);
 
         window.display();
-        sf::sleep(sf::milliseconds(20));
+        sf::sleep(sf::milliseconds(80));
     }
 }
 
@@ -111,7 +111,20 @@ void ColaVisualizer::animateDequeue(const Cola& cola, int value) {
         }
         window.clear(sf::Color::White);
 
+        // Dibuja el nodo que va a salir (animado)
+        float animX = startX + (endX - startX) * i / float(steps);
+        sf::RectangleShape animRect(sf::Vector2f(60, 60));
+        animRect.setFillColor(sf::Color::Red);
+        animRect.setOutlineColor(sf::Color::Black);
+        animRect.setOutlineThickness(2);
+        animRect.setPosition(sf::Vector2f(animX, 70));
+        sf::Text animText(font, std::to_string(value), 24);
+        animText.setFillColor(sf::Color::Black);
+        animText.setPosition(sf::Vector2f(animX + 15, 90));
+        window.draw(animRect);
+        window.draw(animText);
 
+        // Dibuja el resto de la cola (sin el primero)
         NodoCola* current = cola.front ? cola.front->next : nullptr;
         int x = 130;
         while (current) {
@@ -131,21 +144,8 @@ void ColaVisualizer::animateDequeue(const Cola& cola, int value) {
             current = current->next;
         }
 
-
-        float animX = startX + (endX - startX) * i / float(steps);
-        sf::RectangleShape animRect(sf::Vector2f(60, 60));
-        animRect.setFillColor(sf::Color::Red);
-        animRect.setOutlineColor(sf::Color::Black);
-        animRect.setOutlineThickness(2);
-        animRect.setPosition(sf::Vector2f(animX, 70));
-        sf::Text animText(font, std::to_string(value), 24);
-        animText.setFillColor(sf::Color::Black);
-        animText.setPosition(sf::Vector2f(animX + 15, 90));
-        window.draw(animRect);
-        window.draw(animText);
-
         window.display();
-        sf::sleep(sf::milliseconds(20));
+        sf::sleep(sf::milliseconds(80));
     }
 }
 
@@ -168,7 +168,7 @@ void ColaVisualizer::animateFront(const Cola& cola) {
         while (current) {
             sf::RectangleShape rect(sf::Vector2f(60, 60));
             if (first && (frame / 5) % 2 == 0)
-                rect.setFillColor(sf::Color::Yellow); // Resalta el frente
+                rect.setFillColor(sf::Color::Yellow);
             else
                 rect.setFillColor(sf::Color::Cyan);
             rect.setOutlineColor(sf::Color::Black);
@@ -187,7 +187,7 @@ void ColaVisualizer::animateFront(const Cola& cola) {
         }
 
         window.display();
-        sf::sleep(sf::milliseconds(40));
+        sf::sleep(sf::milliseconds(80));
     }
 }
 

@@ -130,7 +130,7 @@ void ListVisualizer::animateInsertFinal(const Lista& lista, int value) {
         window.draw(animText);
 
         window.display();
-        sf::sleep(sf::milliseconds(20));
+        sf::sleep(sf::milliseconds(70));
     }
 }
 
@@ -199,7 +199,7 @@ void ListVisualizer::animateInsertInicio(const Lista& lista, int value) {
         window.draw(animText);
 
         window.display();
-        sf::sleep(sf::milliseconds(20));
+        sf::sleep(sf::milliseconds(70));
     }
 }
 
@@ -254,7 +254,7 @@ void ListVisualizer::animateDelete(const Lista& lista, int value) {
         }
 
         window.display();
-        sf::sleep(sf::milliseconds(40));
+        sf::sleep(sf::milliseconds(70));
     }
 }
 
@@ -275,7 +275,7 @@ void ListVisualizer::animateSearch(const Lista& lista, int value) {
         while (curr) {
             sf::RectangleShape rect(sf::Vector2f(60, 60));
             if (curr->value == value && (frame / 5) % 2 == 0)
-                rect.setFillColor(sf::Color::Yellow); // Resalta el nodo encontrado
+                rect.setFillColor(sf::Color::Yellow);
             else
                 rect.setFillColor(sf::Color::Cyan);
             rect.setOutlineColor(sf::Color::Black);
@@ -309,6 +309,6 @@ void ListVisualizer::animateSearch(const Lista& lista, int value) {
         }
 
         window.display();
-        sf::sleep(sf::milliseconds(40));
+        sf::sleep(sf::milliseconds(70));
     }
 }
