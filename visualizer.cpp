@@ -45,7 +45,7 @@ void Visualizer::drawStack(const Stack& stack) {
     }
 }
 
-// Animación de PUSH
+
 void Visualizer::animatePush(const Stack& stack, int value) {
     sf::RenderWindow window(sf::VideoMode({400, 600}, 32), "Animación PUSH");
     sf::Font font;
@@ -61,7 +61,7 @@ void Visualizer::animatePush(const Stack& stack, int value) {
         }
         window.clear(sf::Color::White);
 
-        // Dibuja la pila actual
+
         Node* current = stack.top;
         int y = 500;
         while (current) {
@@ -81,7 +81,7 @@ void Visualizer::animatePush(const Stack& stack, int value) {
             current = current->next;
         }
 
-        // Dibuja el nuevo bloque animado
+
         float animY = startY + (endY - startY) * i / float(steps);
         sf::RectangleShape animRect(sf::Vector2f(200, 40));
         animRect.setFillColor(sf::Color::Green);
@@ -99,7 +99,6 @@ void Visualizer::animatePush(const Stack& stack, int value) {
     }
 }
 
-// Animación de POP
 void Visualizer::animatePop(const Stack& stack, int value) {
     sf::RenderWindow window(sf::VideoMode({400, 600}, 32), "Animación POP");
     sf::Font font;
@@ -115,7 +114,7 @@ void Visualizer::animatePop(const Stack& stack, int value) {
         }
         window.clear(sf::Color::White);
 
-        // Dibuja la pila sin el tope
+
         Node* current = stack.top ? stack.top->next : nullptr;
         int y = 500;
         while (current) {
@@ -135,7 +134,7 @@ void Visualizer::animatePop(const Stack& stack, int value) {
             current = current->next;
         }
 
-        // Dibuja el bloque animado saliendo
+
         float animY = startY + (endY - startY) * i / float(steps);
         sf::RectangleShape animRect(sf::Vector2f(200, 40));
         animRect.setFillColor(sf::Color::Red);
@@ -153,7 +152,7 @@ void Visualizer::animatePop(const Stack& stack, int value) {
     }
 }
 
-// Animación de TOP (resalta el tope)
+
 void Visualizer::animateTop(const Stack& stack) {
     sf::RenderWindow window(sf::VideoMode({400, 600}, 32), "Animación TOP");
     sf::Font font;
@@ -194,5 +193,3 @@ void Visualizer::animateTop(const Stack& stack) {
         sf::sleep(sf::milliseconds(40));
     }
 }
-
-

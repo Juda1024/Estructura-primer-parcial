@@ -41,6 +41,8 @@
 		</Linker>
 		<Unit filename="cola.cpp" />
 		<Unit filename="cola.hpp" />
+		<Unit filename="cola_visualizer.cpp" />
+		<Unit filename="cola_visualizer.hpp" />
 		<Unit filename="main.cpp" />
 		<Unit filename="stack.cpp" />
 		<Unit filename="stack.hpp" />

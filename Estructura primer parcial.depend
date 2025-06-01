@@ -1,8 +1,10 @@
 # depslib dependency file v1.0
-1748744002 source:c:\users\judag\onedrive\desktop\estructura de datos\primer parcial\parcial 1 proyecto\estructura primer parcial\main.cpp
+1748746955 source:c:\users\judag\onedrive\desktop\estructura de datos\primer parcial\parcial 1 proyecto\estructura primer parcial\main.cpp
 	<iostream>
 	"stack.hpp"
+	"cola.hpp"
 	"visualizer.hpp"
+	"cola_visualizer.hpp"
 
 1748714056 c:\users\judag\onedrive\desktop\estructura de datos\primer parcial\parcial 1 proyecto\estructura primer parcial\sfml\include\sfml\graphics.hpp
 	<SFML/Graphics/BlendMode.hpp>
@@ -513,12 +515,11 @@
 1748714056 c:\users\judag\onedrive\desktop\estructura de datos\primer parcial\parcial 1 proyecto\estructura primer parcial\sfml\include\sfml\system\sleep.hpp
 	<SFML/System/Export.hpp>
 
-1748721702 source:c:\users\judag\onedrive\desktop\estructura de datos\primer parcial\parcial 1 proyecto\estructura primer parcial\cola.cpp
-	"Cola.hpp"
-
-1748721691 c:\users\judag\onedrive\desktop\estructura de datos\primer parcial\parcial 1 proyecto\estructura primer parcial\cola.hpp
-	"NodoCola.hpp"
+1748747030 source:c:\users\judag\onedrive\desktop\estructura de datos\primer parcial\parcial 1 proyecto\estructura primer parcial\cola.cpp
+	"cola.hpp"
 	<iostream>
+
+1748747076 c:\users\judag\onedrive\desktop\estructura de datos\primer parcial\parcial 1 proyecto\estructura primer parcial\cola.hpp
 
 1748721683 c:\users\judag\onedrive\desktop\estructura de datos\primer parcial\parcial 1 proyecto\estructura primer parcial\nodocola.hpp
 
@@ -564,7 +565,16 @@
 	<SFML/Graphics.hpp>
 	"stack.hpp"
 
-1748743502 source:c:\users\judag\onedrive\desktop\estructura de datos\primer parcial\parcial 1 proyecto\estructura primer parcial\visualizer.cpp
+1748745999 source:c:\users\judag\onedrive\desktop\estructura de datos\primer parcial\parcial 1 proyecto\estructura primer parcial\visualizer.cpp
 	"visualizer.hpp"
 	<sstream>
+
+1748747030 source:c:\users\judag\onedrive\desktop\estructura de datos\primer parcial\parcial 1 proyecto\estructura primer parcial\cola_visualizer.cpp
+	"cola_visualizer.hpp"
+	<sstream>
+	<SFML/System/Sleep.hpp>
+
+1748746372 c:\users\judag\onedrive\desktop\estructura de datos\primer parcial\parcial 1 proyecto\estructura primer parcial\cola_visualizer.hpp
+	<SFML/Graphics.hpp>
+	"cola.hpp"
 

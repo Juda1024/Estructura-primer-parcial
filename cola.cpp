@@ -44,3 +44,13 @@ void Cola::printRecursive(NodoCola* node) const {
     cout << "[" << node->value << "] ";
     printRecursive(node->next);
 }
+
+int colaLength(const Cola& cola) {
+    int count = 0;
+    NodoCola* current = cola.front;
+    while (current) {
+        count++;
+        current = current->next;
+    }
+    return count;
+}

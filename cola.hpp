@@ -17,3 +17,5 @@ struct Cola {
     void clear();
     void printRecursive(NodoCola* node) const;
 };
+
+int colaLength(const Cola& cola);
