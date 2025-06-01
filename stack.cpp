@@ -12,7 +12,7 @@ void Stack::push(int val) {
 }
 
 int Stack::pop() {
-    if (!top) return -1; // Manejo simple de error
+    if (!top) return -1;
     int val = top->value;
     Node* temp = top;
     top = top->next;

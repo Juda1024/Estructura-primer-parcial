@@ -7,13 +7,12 @@ void Visualizer::drawStack(const Stack& stack) {
     sf::RenderWindow window(sf::VideoMode({400, 600}, 32), "Visualizador de Pila");
     sf::Font font;
     if (!font.openFromFile("arial.ttf")) {
-        // Si no se carga la fuente, salir de la función
         return;
     }
 
     while (window.isOpen()) {
         while (auto eventOpt = window.pollEvent()) {
-            if (eventOpt->is<sf::Event::Closed>()) // <-- CORRECTO PARA SFML 3.x
+            if (eventOpt->is<sf::Event::Closed>())
                 window.close();
         }
 
