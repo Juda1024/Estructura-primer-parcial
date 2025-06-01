@@ -6,7 +6,8 @@ using namespace std;
 void mostrarMenu() {
     cout << "\n--- MENU PRINCIPAL ---\n";
     cout << "1. Operaciones de pila\n";
-    cout << "2. Salir\n";
+    cout << "2. Operaciones de cola\n";
+    cout << "3. Salir\n";
     cout << "Seleccione una opcion: ";
 }
 
@@ -20,6 +21,17 @@ void mostrarSubmenu() {
     cout << "6. Volver al menu principal\n";
     cout << "Seleccione una opcion: ";
 }
+
+void mostrarSubmenuCola() {
+    cout << "\n--- OPERACIONES DE COLA ---\n";
+    cout << "1. Enqueue (encolar)\n";
+    cout << "2. Dequeue (desencolar)\n";
+    cout << "3. Front (ver frente)\n";
+    cout << "4. Mostrar cola (recursivo)\n";
+    cout << "5. Volver al menu principal\n";
+    cout << "Seleccione una opcion: ";
+}
+
 
 int main() {
     Stack pila;

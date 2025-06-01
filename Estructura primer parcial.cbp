@@ -39,6 +39,8 @@
 			<Add library="sfml-graphics" />
 			<Add directory="SFML/lib" />
 		</Linker>
+		<Unit filename="cola.cpp" />
+		<Unit filename="cola.hpp" />
 		<Unit filename="main.cpp" />
 		<Unit filename="stack.cpp" />
 		<Unit filename="stack.hpp" />
